@@ -9,10 +9,11 @@
     --yellow-color: #FFF000;
     --yellow-ligth: #F8F984;
     --blue-color: #19587D;
+    --black-color:#000000;
     --white-color:#ffffff;
     --gradient-white:#eddebf8a;
     --gradient-red:#89000b80;
-    --black-color:#000000;
+    --gradient-blue: #19587D;
 }
 h1{
     font-family: 'rajdhani';
@@ -133,7 +134,8 @@ nav ul a:hover{
     margin-top: 40px;
     width: 150px;
     margin-left: 220px;
-    display: inline;
+    position: relative;
+    top: 85px;
 }
 #nemesis .container .info{
     margin: 20px 0px 40px 0px;
@@ -142,6 +144,131 @@ nav ul a:hover{
     font-size: 22px;
 }
 .nemesis-personnage{
+    text-transform: capitalize;
     display: flex;
     justify-content: space-between;
+}
+#nemesis .nemesis-item{
+    text-align: center;
+}
+.bathome12{
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+/*design de la partie ALIES */
+#allies .container .info{
+    margin: 20px 0px 20px 0px;
+    width: 90%;
+    text-align: justify;
+    font-size: 22px;
+}
+#allies .container .allies-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+#allies .allies-item{
+    text-align: center;
+}
+
+/*design de la partie justice league*/
+#justice .container .justice-league{
+    padding-top: 30px;
+    margin: 40px 0px 40px 0px;
+    width: 90%;
+    text-align: justify;
+    font-size: 22px;
+}
+#justice .container .justice-league .titre{
+    margin-bottom: 20px;
+}
+
+/*design de la partie multimedia*/
+#multimedia button{
+    position: relative;
+    top:170px ;
+    background-color:var(
+        --black-color
+    );
+    border: none;
+}
+#multimedia button.rigth{
+    left:90% ;
+}
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto
+}
+#multimedia .slider-image{
+    width: 100%;
+}
+#multimedia .slider-content{
+    padding: 15px;
+    background: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-blue)
+    );
+    border-radius: 0px 15px 15px 0px;
+}
+#multimedia p{
+    font-size: 15px;
+}
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+/*design de la partie formulaire*/
+#contact{
+    background-color: #19587D;
+    padding: 70px 0;
+}
+#contact .form{
+    width: 60%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+#contact .titre{
+    display: block;
+    margin: 27px 0;
+}
+#contact .form .frequence{
+    padding-top: 20px;
+}
+#contact .form input[type='email'],textarea{
+    border-top: none;
+    display: block;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgba(170, 162, 162, 0.856);
+    width: 80%;
+    background-color: transparent;
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgba(170, 162, 162, 0.856);
+}
+#contact .btn-groupe{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-groupe label{
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(
+        69deg,red,blue
+    )1;
 }
